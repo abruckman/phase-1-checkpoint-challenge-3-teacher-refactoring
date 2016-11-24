@@ -2,7 +2,6 @@
 require_relative 'dbc_participant'
 
 class Student < DBCParticipant
-  attr_accessor :name
 
   def initialize(options = {})
     @phase = 1

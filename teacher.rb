@@ -2,8 +2,6 @@ require_relative 'dbc_participant'
 class Teacher < DBCParticipant
 
   attr_reader :salary, :target_raise
-  attr_accessor :name
-
   def initialize(options={})
     @phase = 3
     super
