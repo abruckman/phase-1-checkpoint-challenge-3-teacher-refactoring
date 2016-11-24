@@ -1,8 +1,6 @@
 require_relative 'teacher'
-require_relative 'high_fiveable'
 
 class SeniorTeacher < Teacher
-  include HighFivable
 
   attr_reader  :performance_rating
 
@@ -12,7 +10,6 @@ class SeniorTeacher < Teacher
     super
   end
 
-
   def teach_stuff
     response = ""
     response += "Listen, class, this is how everything works, fo SHO! "
@@ -20,7 +17,6 @@ class SeniorTeacher < Teacher
     response += "... You're welcome. *saunters away*"
     response
   end
-
 
   def lead_training_session
     puts "Hey newbie!  Here are some common pitfalls.  Don't fall in them!"

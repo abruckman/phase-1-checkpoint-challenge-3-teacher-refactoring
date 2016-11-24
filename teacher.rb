@@ -1,16 +1,13 @@
-require_relative 'person'
-class Teacher < Person
-  include HighFivable
+require_relative 'dbc_participant'
+class Teacher < DBCParticipant
 
   attr_reader :salary, :target_raise
   attr_accessor :name
 
   def initialize(options={})
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
     @phase = 3
+    super
   end
-
 
   def set_phase(num)
     @phase = num

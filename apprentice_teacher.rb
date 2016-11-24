@@ -1,16 +1,13 @@
-require_relative 'high_fiveable'
+
 require_relative 'teacher'
 
 class ApprenticeTeacher < Teacher
-  include HighFivable
-
 
   def initialize(options={})
     @target_raise = 800
     @target_rating = 80
     super
   end
-
 
   def teach_stuff
     response = ""
@@ -19,7 +16,6 @@ class ApprenticeTeacher < Teacher
     response += "... You're welcome."
     response
   end
-
 
   def attend_training_session
     puts "Whoa. I know ruby-fu"
