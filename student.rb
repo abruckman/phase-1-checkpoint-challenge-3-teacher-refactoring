@@ -1,8 +1,9 @@
 require_relative 'high_fiveable'
+require_relative 'person'
 
-class Student
+class Student < Person
   include HighFivable
-  attr_reader :age, :phase
+  # attr_reader :age, :phase
   attr_accessor :name
 
   def initialize(options = {})

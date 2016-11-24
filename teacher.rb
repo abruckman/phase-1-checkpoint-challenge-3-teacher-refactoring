@@ -1,7 +1,8 @@
-class Teacher
+require_relative 'person'
+class Teacher < Person
   include HighFivable
 
-  attr_reader :age, :salary, :phase, :target_raise
+  attr_reader :salary, :target_raise
   attr_accessor :name
 
   def initialize(options={})
